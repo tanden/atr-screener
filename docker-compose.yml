@@ -4,7 +4,7 @@ services:
         image: python:3
         container_name: app
         volumes: 
-            - ./:/app/src
+            - ./app:/app
         tty: true
 volumes: 
     app:
