@@ -7,11 +7,11 @@ import datetime
 def getStockPriceData(stock_code):
     symbol = stock_code + '.T'
     stock = share.Share(symbol)
-    pereod = getWorkDayPeriod()
+    pereod = __getWorkDayPeriod()
     data = stock.get_historical(share.PERIOD_TYPE_DAY, pereod, share.FREQUENCY_TYPE_DAY, 1)
     return data
 
-def getWorkDayPeriod():
+def __getWorkDayPeriod():
     period = 20
     work_day = 0
     while True:
