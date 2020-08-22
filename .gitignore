@@ -1,2 +1,3 @@
 .DS_Store
-app/data/*.csv
+trade-util/data/*.csv
+trade-util/app/lib/__pycache__/
