@@ -3,7 +3,7 @@ import pathlib
 
 def getStockCodeArray():
     stock_codes = []
-    csv_path = pathlib.Path('data/screener_result.csv')
+    csv_path = pathlib.Path('trade-util/data/screener_result.csv')
     with open(csv_path.resolve()) as file:
         reader = csv.reader(file)
         for row in reader:
