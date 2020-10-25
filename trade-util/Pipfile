@@ -9,6 +9,8 @@ verify_ssl = true
 yahoo-finance-api2 = "*"
 jpholiday = "*"
 datetime = "*"
+pandas = "*"
+numpy = "*"
 
 [requires]
 python_version = "3.8"
