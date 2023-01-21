@@ -1,5 +1,4 @@
 import lib.csv_handler as csv_handler
-import lib.stock_info as stock_info
 import pprint
 import webbrowser
 import time
