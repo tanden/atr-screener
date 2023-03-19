@@ -12,7 +12,7 @@ def buildUrl(stock_code):
 
 
 def main():
-    stocks = csv_handler.getStockCodeArray()
+    stocks = csv_handler.getStockCode()
     for stock_code in stocks:
         url = buildUrl(stock_code)
         time.sleep(1)

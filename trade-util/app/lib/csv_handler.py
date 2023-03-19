@@ -1,7 +1,7 @@
 import csv
 import pathlib
 
-def getStockCodeArray():
+def getStockCode() -> list:
     stock_codes = []
     csv_path = pathlib.Path('data/screener_result.csv')
     with open(csv_path.resolve()) as file:
