@@ -13,7 +13,7 @@ def getStockCode() -> list:
         reader = csv.reader(file)
         for row in reader:
             if row[0].isnumeric():
-                stock_codes.append(row[0])
+                stock_codes.append(int(row[0]))
 
     return stock_codes
 
