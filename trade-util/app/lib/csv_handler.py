@@ -4,6 +4,8 @@ import glob
 import logging
 import re
 
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+
 def getStockCode() -> list:
     stock_codes = []
     csv_path = pathlib.Path('data/screener_result.csv')
