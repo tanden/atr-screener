@@ -16,8 +16,8 @@ def buildUrl(stock_code: str) -> str:
 
 def main():
     logging.debug('start main')
-    
     eliminate_stock_codes = csv_handler.getEliminateStockCode()
+    logging.debug('除外された銘柄数' + str(len(eliminate_stock_codes)))
     stock_codes = csv_handler.getStockCode()
     filtered_stock_codes = [code for code in stock_codes if code not in eliminate_stock_codes]
     for stock_code in filtered_stock_codes:
